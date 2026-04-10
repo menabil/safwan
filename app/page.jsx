@@ -1,4 +1,6 @@
+import About from "@/layouts/About";
 import Banner from "@/layouts/Banner";
+import Project from "@/layouts/Project";
 import Service from "@/layouts/Service";
 
 export default function Home() {
@@ -6,6 +8,8 @@ export default function Home() {
     <>
       <Banner />
       <Service />
+      <About />
+      <Project />
     </>
   );
 }
