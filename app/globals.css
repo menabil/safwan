@@ -5,4 +5,5 @@
   --color-secondary: #e5745d;
   --font-Vol: var(--font-Vol);
   --font-Jos: var(--font-Jos);
+  --shadow-newMade: 8px 8px 20px 3px rgba(147, 147, 147, 0.13);
 }

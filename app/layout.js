@@ -1,4 +1,4 @@
-import { Jost, Vollkorn_SC } from "next/font/google";
+import { Jost, Vollkorn } from "next/font/google";
 import "./globals.css";
 import Header from "@/layouts/Header";
 import Footer from "@/layouts/Footer";
@@ -9,9 +9,9 @@ const jos = Jost({
   subsets: ["latin"],
 });
 
-const vol = Vollkorn_SC({
+const vol = Vollkorn({
   variable: "--font-Vol",
-  weight: ["400", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
