@@ -1,50 +1,17 @@
-// import { Jost, Oswald } from "next/font/google";
-// import "./globals.css";
-// import Header from "@/layouts/Header";
-
-// const jost = Jost({
-//   variable: "--font-Jost",
-//   weight: ["400", "500", "600", "700"],
-//   subsets: ["latin"],
-// });
-
-// const ows = Oswald({
-//   variable: "--font-Oswald",
-//   weight: ["400", "500", "600", "700"],
-//   subsets: ["latin"],
-// });
-
-// export const metadata = {
-//   title: "Safwan",
-// };
-
-// export default function RootLayout({ children }) {
-//   return (
-//     <html
-//       lang="en"
-//       className={`${jost.variable} ${ows.variable} h-full antialiased`}
-//     >
-//       <body className="min-h-full flex flex-col">
-//         <Header />
-//         {children}
-//       </body>
-//     </html>
-//   );
-// }
-
-import { Jost, Oswald } from "next/font/google";
+import { Jost, Vollkorn_SC } from "next/font/google";
 import "./globals.css";
 import Header from "@/layouts/Header";
+import Footer from "@/layouts/Footer";
 
-const jost = Jost({
-  variable: "--font-jost",
+const jos = Jost({
+  variable: "--font-Jos",
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
-const Ows = Oswald({
-  variable: "--font-ows",
-  weight: ["400", "500", "600", "700"],
+const vol = Vollkorn_SC({
+  variable: "--font-Vol",
+  weight: ["400", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -56,11 +23,12 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${jost.variable} ${Ows.variable} h-full antialiased`}
+      className={`${jos.variable} ${vol.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

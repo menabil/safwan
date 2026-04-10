@@ -3,6 +3,6 @@
 @theme {
   --color-primary: #00413d;
   --color-secondary: #e5745d;
-  --font-Ows: var(--font-ows);
-  --font-Jos: var(--font-jost);
+  --font-Vol: var(--font-Vol);
+  --font-Jos: var(--font-Jos);
 }
