@@ -1,5 +1,6 @@
 import About from "@/layouts/About";
 import Banner from "@/layouts/Banner";
+import Portfolio from "@/layouts/Portfolio";
 import Project from "@/layouts/Project";
 import Service from "@/layouts/Service";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Service />
       <About />
       <Project />
+      <Portfolio />
     </>
   );
 }
