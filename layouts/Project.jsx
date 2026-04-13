@@ -12,7 +12,7 @@ const Project = () => {
           Recent Projects
         </p>
         <Flex className={"justify-between mt-2 mb-10"}>
-          <h3 className="pt-3 pb-1 font-Vol font-medium text-[50px] leading-14 text-primary w-142.5">
+          <h3 className="pt-3 pb-1 font-Vol font-medium text-[50px] leading-14 text-primary">
             My Recent Projects
           </h3>
           <Flex className={"gap-x-5"}>

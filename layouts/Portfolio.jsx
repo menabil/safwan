@@ -9,7 +9,7 @@ const Portfolio = () => {
         <p className="text-lg font-medium text-secondary text-center font-Vol">
           My Portfolio
         </p>
-        <h3 className="text-[50px] font-medium w-130 leading-15 text-primary font-Vol text-center mx-auto pt-3 pb-6">
+        <h3 className="text-[50px] font-medium leading-15 text-primary font-Vol text-center mx-auto pt-3 pb-6">
           My Work Example
         </h3>
         <div className="flex gap-x-7.5 justify-center pb-10 font-Vol text-base text-primary">

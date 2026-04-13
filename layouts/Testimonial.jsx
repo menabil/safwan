@@ -13,7 +13,7 @@ const Testimonial = () => {
         <p className="text-lg font-medium text-secondary text-center font-Vol">
           Client Testimonial
         </p>
-        <h3 className="text-[50px] font-medium w-130 leading-15 text-primary font-Vol text-center mx-auto pt-3 pb-10">
+        <h3 className="text-[50px] font-medium leading-15 text-primary font-Vol text-center mx-auto pt-3 pb-10">
           Feedback From Client
         </h3>
         <Flex className={"gap-x-7.5 justify-center mb-25"}>
