@@ -1,5 +1,6 @@
 import About from "@/layouts/About";
 import Banner from "@/layouts/Banner";
+import Blog from "@/layouts/Blog";
 import Contact from "@/layouts/Contact";
 import Portfolio from "@/layouts/Portfolio";
 import Project from "@/layouts/Project";
@@ -16,6 +17,7 @@ export default function Home() {
       <Portfolio />
       <Testimonial />
       <Contact />
+      <Blog />
     </>
   );
 }

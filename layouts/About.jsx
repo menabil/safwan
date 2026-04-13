@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section className="py-30">
       <Container>
-        <Flex className={"gap-x-7.5"}>
+        <Flex className={"gap-x-7.5 justify-center"}>
           <Flex className={"gap-x-7.5"}>
             <div className="bg-[#C4C4C4] h-120 w-92.5"></div>
             <Flex className="flex-col gap-y-7.5">
