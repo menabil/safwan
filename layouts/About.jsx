@@ -36,12 +36,7 @@ const About = () => {
           </div>
         </Flex>
         <div className="mt-20">
-          <Image
-            src={"/Skill.png"}
-            alt="skill"
-            width={"1320"}
-            height={"282"}
-          />
+          <Image src={"/Skill.png"} alt="skill" width={"1320"} height={"282"} />
         </div>
       </Container>
     </section>
