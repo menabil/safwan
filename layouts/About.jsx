@@ -9,7 +9,7 @@ const About = () => {
     { label: "Brand Design", percentage: 60 },
     { label: "Web Development", percentage: 40 },
   ];
-  const radius = 50;
+  const radius = 70;
   const circumference = 2 * Math.PI * radius;
   return (
     <section className="py-30">
@@ -41,55 +41,53 @@ const About = () => {
             <Button btnText={"Download CV"} className={"w-fit mt-13.5"} />
           </div>
         </Flex>
-        <div className="mt-20">
-          <div className="flex justify-center items-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 max-w-6xl w-full">
-              {skills.map((skill, index) => {
-                const strokeDashoffset =
-                  circumference - (skill.percentage / 100) * circumference;
-                return (
-                  <div
-                    key={index}
-                    className="bg-white rounded-lg px-6 py-7.5 shadow-newMade flex flex-col items-center justify-center border border-gray-50 text-center"
-                  >
-                    {/* Circular Progress Bar Container */}
-                    <div className="relative flex items-center justify-center mb-6">
-                      <svg className="w-full h-full ">
-                        {/* Background Circle */}
-                        <circle
-                          cx="110"
-                          cy="90"
-                          r={radius}
-                          className="stroke-[#C4C4C4]"
-                          strokeWidth="6"
-                          fill="transparent"
-                        />
-                        {/* Foreground/Progress Circle */}
-                        <circle
-                          cx="110"
-                          cy="90"
-                          r={radius}
-                          className="stroke-secondary"
-                          strokeWidth="6"
-                          fill="transparent"
-                          strokeDasharray={circumference}
-                          strokeDashoffset={strokeDashoffset}
-                          strokeLinecap="round"
-                        />
-                      </svg>
-                      {/* Percentage Text inside Circle */}
-                      <span className="absolute top-[45%] left-[35%] text-[34px] font-Vol font-semibold text-secondary">
-                        {skill.percentage}%
-                      </span>
-                    </div>
-                    {/* Title */}
-                    <h3 className="text-primary font-Vol font-semibold text-[26px]">
-                      {skill.label}
-                    </h3>
+        <div className="flex justify-center items-center mt-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 max-w-6xl w-full">
+            {skills.map((skill, index) => {
+              const strokeDashoffset =
+                circumference - (skill.percentage / 100) * circumference;
+              return (
+                <div
+                  key={index}
+                  className="bg-white rounded-lg px-6 py-7.5 shadow-newMade flex flex-col items-center justify-center border border-gray-50 text-center"
+                >
+                  {/* Circular Progress Bar Container */}
+                  <div className="relative flex items-center justify-center mb-6">
+                    <svg className="w-full h-full">
+                      {/* Background Circle */}
+                      <circle
+                        cx="110"
+                        cy="75"
+                        r={radius}
+                        className="stroke-[#C4C4C4]"
+                        strokeWidth="6"
+                        fill="transparent"
+                      />
+                      {/* Foreground/Progress Circle */}
+                      <circle
+                        cx="110"
+                        cy="75"
+                        r={radius}
+                        className="stroke-secondary"
+                        strokeWidth="6"
+                        fill="transparent"
+                        strokeDasharray={circumference}
+                        strokeDashoffset={strokeDashoffset}
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                    {/* Percentage Text inside Circle */}
+                    <span className="absolute top-[35%] left-[35%] text-[34px] font-Vol font-semibold text-secondary">
+                      {skill.percentage}%
+                    </span>
                   </div>
-                );
-              })}
-            </div>
+                  {/* Title */}
+                  <h3 className="text-primary font-Vol font-semibold text-[26px]">
+                    {skill.label}
+                  </h3>
+                </div>
+              );
+            })}
           </div>
         </div>
       </Container>
