@@ -1,23 +1,28 @@
 "use client";
 import Container from "@/components/Container";
-import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { useEffect, useRef } from "react";
-import mixitup from "mixitup";
 
 const Portfolio = () => {
   const containerRef = useRef(null);
+
   useEffect(() => {
-    if (containerRef.current) {
-      mixitup(containerRef.current, {
-        animation: {
-          duration: 400,
-        },
-        selectors: {
-          target: ".mix",
-        },
-      });
-    }
+    // Dynamically import mixitup only on the client-side
+    const initMixItUp = async () => {
+      const { default: mixitup } = await import("mixitup");
+
+      if (containerRef.current) {
+        mixitup(containerRef.current, {
+          animation: {
+            duration: 400,
+          },
+          selectors: {
+            target: ".mix",
+          },
+        });
+      }
+    };
+    initMixItUp();
   }, []);
   return (
     <section className="py-30">

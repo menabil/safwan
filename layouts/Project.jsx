@@ -24,7 +24,7 @@ const Project = () => {
             </div>
           </Flex>
         </Flex>
-        <Flex className={"gap-x-10 justify-center"}>
+        <Flex className={"gap-x-10 justify-between"}>
           <div className="shadow-newMade w-fit group">
             <div className="bg-[#C4C4C4] h-67.5 w-100"></div>
             <div className="p-7.5">
