@@ -11,6 +11,7 @@ const About = () => {
   ];
   const radius = 70;
   const circumference = 2 * Math.PI * radius;
+
   return (
     <section className="py-30">
       <Container>
@@ -43,10 +44,12 @@ const About = () => {
         </Flex>
         <div className="flex justify-center items-center mt-20">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 max-w-6xl w-full">
+
             {skills.map((skill, index) => {
               const strokeDashoffset =
                 circumference - (skill.percentage / 100) * circumference;
               return (
+                
                 <div
                   key={index}
                   className="bg-white rounded-lg px-6 py-7.5 shadow-newMade flex flex-col items-center justify-center border border-gray-50 text-center"
