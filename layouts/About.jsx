@@ -12,24 +12,26 @@ const About = () => {
   const radius = 70;
   const circumference = 2 * Math.PI * radius;
   return (
-    <section className="py-30">
+    <section className="py-15 md:py-30">
       <Container>
-        <Flex className={"gap-x-7.5 justify-center"}>
-          <Flex className={"gap-x-7.5"}>
-            <div className="bg-[#C4C4C4] h-120 w-92.5"></div>
+        <Flex
+          className={"gap-7.5 justify-center flex-col-reverse md:flex-row "}
+        >
+          <Flex className={"gap-7.5 flex-col md:flex-row"}>
+            <div className="bg-[#C4C4C4] md:h-120 h-56.25 md:w-92.5 w-70"></div>
             <Flex className="flex-col gap-y-7.5">
-              <div className="bg-[#C4C4C4] h-56.25 w-42.5"></div>
-              <div className="bg-[#C4C4C4] h-56.25 w-42.5"></div>
+              <div className="bg-[#C4C4C4] h-56.25 w-70 md:w-42.5"></div>
+              <div className="bg-[#C4C4C4] h-56.25 w-70 md:w-42.5"></div>
             </Flex>
           </Flex>
-          <div className="">
+          <div className="text-center md:text-left">
             <p className="text-secondary text-lg font-medium font-Vol">
               About Me
             </p>
-            <h3 className="pt-3 pb-1 font-Vol font-medium text-[50px] leading-14 text-primary w-142.5">
+            <h3 className="pt-3 pb-1 font-Vol font-medium text-3xl md:text-[50px] md:leading-14 text-primary w-[80%] mx-auto md:w-142.5">
               I Enjoy Solving Problems With Scalable Solutions
             </h3>
-            <p className="text-primary text-base font-Jos leading-6.5 w-142.5">
+            <p className="text-primary text-base font-Jos leading-6.5 md:w-142.5 w-[90%] mx-auto">
               Quisruam est, qui dolorem ipsum quia dolor sit amet, consecteaur
               aeci velit, sed quia non numquam eius modi tempora incidunt lao
               magnam aliquam quaerat voluptatem reprehenderit.
@@ -38,11 +40,14 @@ const About = () => {
               Modi tempora incidunt ut lao magnam aliquam quaerat voluptatem
               reprehenderit non numquam eius.
             </p>
-            <Button btnText={"Download CV"} className={"w-fit mt-13.5"} />
+            <Button
+              btnText={"Download CV"}
+              className={"w-fit mt-13.5 mx-auto md:mx-0"}
+            />
           </div>
         </Flex>
         <div className="flex justify-center items-center mt-20">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 max-w-6xl w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 max-w-6xl md:w-full w-[85%]">
             {skills.map((skill, index) => {
               const strokeDashoffset =
                 circumference - (skill.percentage / 100) * circumference;
