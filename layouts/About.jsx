@@ -11,6 +11,7 @@ const About = () => {
   ];
   const radius = 70;
   const circumference = 2 * Math.PI * radius;
+
   return (
     <section className="py-15 md:py-30">
       <Container>
@@ -28,25 +29,25 @@ const About = () => {
             <p className="text-secondary text-lg font-medium font-Vol">
               About Me
             </p>
-            <h3 className="pt-3 pb-1 font-Vol font-medium text-3xl md:text-[50px] md:leading-14 text-primary w-[80%] mx-auto md:w-142.5">
+            <h3 className="pt-3 pb-3 font-Vol font-medium text-3xl md:text-[50px] md:leading-14 text-primary w-[80%] mx-auto md:w-142.5">
               I Enjoy Solving Problems With Scalable Solutions
             </h3>
-            <p className="text-primary text-base font-Jos leading-6.5 md:w-142.5 w-[90%] mx-auto">
+            <div className="text-[#4D7A77] text-base font-Jos leading-6.5 md:w-142.5 w-[90%] mx-auto">
               Quisruam est, qui dolorem ipsum quia dolor sit amet, consecteaur
               aeci velit, sed quia non numquam eius modi tempora incidunt lao
               magnam aliquam quaerat voluptatem reprehenderit.
-              <br />
-              <br />
-              Modi tempora incidunt ut lao magnam aliquam quaerat voluptatem
-              reprehenderit non numquam eius.
-            </p>
+              <p className="md:pt-7">
+                Modi tempora incidunt ut lao magnam aliquam quaerat voluptatem
+                reprehenderit non numquam eius.
+              </p>
+            </div>
             <Button
               btnText={"Download CV"}
-              className={"w-fit mt-13.5 mx-auto md:mx-0"}
+              className={"w-fit mt-5 md:mt-13.5 mx-auto md:mx-0"}
             />
           </div>
         </Flex>
-        <div className="flex justify-center items-center mt-20">
+        <div className="flex justify-center items-center mt-10 md:mt-20">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 max-w-6xl md:w-full w-[85%]">
             {skills.map((skill, index) => {
               const strokeDashoffset =
