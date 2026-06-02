@@ -8,19 +8,21 @@ import { FaStarHalfAlt } from "react-icons/fa";
 
 const Testimonial = () => {
   return (
-    <section className="bg-[#F9F4F1] pt-27.5 pb-18">
+    <section className="bg-[#F9F4F1] md:pt-27.5 md:pb-18 py-15">
       <Container>
         <p className="text-lg font-medium text-secondary text-center font-Vol">
           Client Testimonial
         </p>
-        <h3 className="text-[50px] font-medium leading-15 text-primary font-Vol text-center mx-auto pt-3 pb-10">
+        <h3 className="text-3xl md:text-[50px] md:leading-15 font-medium text-primary font-Vol text-center mx-auto pt-3 pb-10">
           Feedback From Client
         </h3>
-        <Flex className={"gap-x-7.5 justify-center mb-25"}>
-          <div className="">
-            <div className="w-142.5 bg-white mb-10 shadow-newMade">
+        <Flex
+          className={"gap-7.5 justify-center md:mb-25 flex-col md:flex-row"}
+        >
+          <div className="mb-5 md:mb-0">
+            <div className="md:w-142.5 bg-white mb-10 shadow-newMade">
               <div className="h-2 bg-secondary w-full"></div>
-              <p className="pt-5.5 pb-7.5 w-135 font-Jos text-base leading-6.5 px-10 text-primary">
+              <p className="md:pt-5.5 md:pb-7.5 p-4 md:w-135 font-Jos text-base leading-6.5 px-10 text-primary">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.Lorem Ipsum is simply dummy text of the printing and
                 this typesetting industry.
@@ -46,9 +48,9 @@ const Testimonial = () => {
             </Flex>
           </div>
           <div className="">
-            <div className="w-142.5 bg-white mb-10 shadow-newMade">
+            <div className="md:w-142.5 bg-white mb-10 shadow-newMade">
               <div className="h-2 bg-secondary w-full"></div>
-              <p className="pt-5.5 pb-7.5 w-135 font-Jos text-base leading-6.5 px-10 text-primary">
+              <p className="md:pt-5.5 md:pb-7.5 p-4 md:w-135 font-Jos text-base leading-6.5 px-10 text-primary">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.Lorem Ipsum is simply dummy text of the printing and
                 this typesetting industry.
