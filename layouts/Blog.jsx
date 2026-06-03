@@ -5,17 +5,17 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const Blog = () => {
   return (
-    <section className="pb-30">
+    <section className="md:pb-30 pb-15">
       <Container>
         <p className="text-lg font-medium text-secondary text-center font-Vol">
           Letest Blogs
         </p>
-        <h3 className="text-[50px] font-medium leading-15 text-primary font-Vol text-center mx-auto pt-3 pb-10">
+        <h3 className="text-3xl md:text-[50px] md:leading-15 font-medium text-primary font-Vol text-center mx-auto pt-3 pb-10">
           Blog & Articles
         </h3>
-        <Flex className={"gap-x-10 justify-center"}>
+        <Flex className={"gap-10 justify-center flex-col md:flex-row"}>
           <div className="shadow-newMade w-fit group">
-            <div className="bg-[#C4C4C4] h-65 w-92.5"></div>
+            <div className="bg-[#C4C4C4] h-65 md:w-92.5"></div>
             <div className="p-7.5">
               <Flex className={"justify-between"}>
                 <p className="text-secondary font-Vol text-sm">
@@ -42,7 +42,7 @@ const Blog = () => {
             </div>
           </div>
           <div className="shadow-newMade w-fit group">
-            <div className="bg-[#C4C4C4] h-65 w-92.5"></div>
+            <div className="bg-[#C4C4C4] h-65 md:w-92.5"></div>
             <div className="p-7.5">
               <Flex className={"justify-between"}>
                 <p className="text-secondary font-Vol text-sm">
@@ -69,7 +69,7 @@ const Blog = () => {
             </div>
           </div>
           <div className="shadow-newMade w-fit group">
-            <div className="bg-[#C4C4C4] h-65 w-92.5"></div>
+            <div className="bg-[#C4C4C4] h-65 md:w-92.5"></div>
             <div className="p-7.5">
               <Flex className={"justify-between"}>
                 <p className="text-secondary font-Vol text-sm">
