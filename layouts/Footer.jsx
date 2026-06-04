@@ -9,9 +9,9 @@ import { FaBehance, FaInstagram } from "react-icons/fa6";
 const Footer = () => {
   return (
     <section className="bg-primary">
-      <Container className={"py-20"}>
-        <Image src={logo} alt="logo" className="mx-auto mb-15" />
-        <ul className="flex items-center gap-x-7 text-white text-lg justify-center mb-12.5">
+      <Container className={"md:py-20 py-15"}>
+        <Image src={logo} alt="logo" className="mx-auto md:mb-15 mb-8" />
+        <ul className="md:flex items-center gap-x-7 text-white text-lg justify-center mb-12.5 hidden">
           <li className="hover:text-secondary duration-300 cursor-pointer border-r-3 border-white/10 pr-8">
             Home
           </li>
