@@ -8,14 +8,14 @@ const Project = () => {
   return (
     <section>
       <Container>
-        <p className="text-secondary text-lg font-medium font-Vol">
+        <p className="text-secondary text-lg font-medium font-Vol text-center md:text-left">
           Recent Projects
         </p>
-        <Flex className={"justify-between mt-2 mb-10"}>
-          <h3 className="pt-3 pb-1 font-Vol font-medium text-[50px] leading-14 text-primary">
+        <Flex className={"justify-center md:justify-between mt-2 mb-10"}>
+          <h3 className="text-3xl md:text-[50px] md:leading-14 pt-3 pb-1 font-Vol font-medium text-primary">
             My Recent Projects
           </h3>
-          <Flex className={"gap-x-5"}>
+          <Flex className={"gap-x-5 hidden md:flex"}>
             <div className="p-3.5 border-2 border-primary/10 text-primary text-2xl cursor-pointer">
               <FaArrowLeft />
             </div>
@@ -24,17 +24,17 @@ const Project = () => {
             </div>
           </Flex>
         </Flex>
-        <Flex className={"gap-x-10 justify-between"}>
+        <Flex className={"gap-10 justify-between flex-col md:flex-row"}>
           <div className="shadow-newMade w-fit group">
-            <div className="bg-[#C4C4C4] h-67.5 w-100"></div>
-            <div className="p-7.5">
+            <div className="bg-[#C4C4C4] h-67.5 w-full md:w-100"></div>
+            <div className="p-5 md:p-7.5">
               <p className="text-secondary font-Vol text-base font-medium">
                 Analytics, UI-Ux
               </p>
-              <h6 className="text-primary text-2xl font-medium font-Vol w-76 leading-7.5 py-2.5">
+              <h6 className="text-primary text-2xl font-medium font-Vol md:w-76 leading-7.5 py-2.5">
                 Branding & Digital Video Campaign For George’s Cafe
               </h6>
-              <p className="text-primary text-base font-Jos w-72.5 leading-6">
+              <p className="text-primary text-base font-Jos md:w-72.5 leading-6">
                 Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting
                 Industry.
               </p>
@@ -49,15 +49,15 @@ const Project = () => {
             </div>
           </div>
           <div className="shadow-newMade w-fit group">
-            <div className="bg-[#C4C4C4] h-67.5 w-100"></div>
+            <div className="bg-[#C4C4C4] h-67.5 w-full md:w-100"></div>
             <div className="p-7.5">
               <p className="text-secondary font-Vol text-base font-medium">
                 Analytics, UI-Ux
               </p>
-              <h6 className="text-primary text-2xl font-medium font-Vol w-76 leading-7.5 py-2.5">
+              <h6 className="text-primary text-2xl font-medium font-Vol md:w-76 leading-7.5 py-2.5">
                 Branding & Digital Video Campaign For George’s Cafe
               </h6>
-              <p className="text-primary text-base font-Jos w-72.5 leading-6">
+              <p className="text-primary text-base font-Jos md:w-72.5 leading-6">
                 Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting
                 Industry.
               </p>
@@ -72,15 +72,15 @@ const Project = () => {
             </div>
           </div>
           <div className="shadow-newMade w-fit group">
-            <div className="bg-[#C4C4C4] h-67.5 w-100"></div>
+            <div className="bg-[#C4C4C4] h-67.5 w-full md:w-100"></div>
             <div className="p-7.5">
               <p className="text-secondary font-Vol text-base font-medium">
                 Analytics, UI-Ux
               </p>
-              <h6 className="text-primary text-2xl font-medium font-Vol w-76 leading-7.5 py-2.5">
+              <h6 className="text-primary text-2xl font-medium font-Vol md:w-76 leading-7.5 py-2.5">
                 Branding & Digital Video Campaign For George’s Cafe
               </h6>
-              <p className="text-primary text-base font-Jos w-72.5 leading-6">
+              <p className="text-primary text-base font-Jos md:w-72.5 leading-6">
                 Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting
                 Industry.
               </p>
