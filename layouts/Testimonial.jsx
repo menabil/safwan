@@ -29,7 +29,7 @@ const Testimonial = () => {
               </p>
             </div>
             <Flex className={"gap-x-7.5"}>
-              <Image src={ava} alt="ava" className="ml-15" />
+              <Image src={ava} alt="ava" className="md:ml-15 ml-10" />
               <div className="">
                 <h6 className="text-xl font-semibold font-Vol text-primary ">
                   Michale Doie
@@ -57,7 +57,7 @@ const Testimonial = () => {
               </p>
             </div>
             <Flex className={"gap-x-7.5"}>
-              <Image src={ava} alt="ava" className="ml-15" />
+              <Image src={ava} alt="ava" className="md:ml-15 ml-10" />
               <div className="">
                 <h6 className="text-xl font-semibold font-Vol text-primary ">
                   Adam Smith

@@ -9,7 +9,7 @@ import Flex from "@/components/Flex";
 
 const Service = () => {
   return (
-    <section className="md:mt-50 mt-20 ">
+    <section className="md:mt-50 mt-20" id="service">
       <Container>
         <p className="text-lg font-medium text-secondary text-center font-Vol">
           MY SERVICES

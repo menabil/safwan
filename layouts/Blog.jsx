@@ -24,10 +24,10 @@ const Blog = () => {
                 <p className="text-primary text-sm font-Jos">Mar 8, 2022</p>
               </Flex>
 
-              <h6 className="text-primary text-2xl font-medium font-Vol w-70 leading-7.5 py-3">
+              <h6 className="text-primary text-2xl font-medium font-Vol md:w-70 leading-7.5 py-3">
                 Quis autem vea eum iure reprehenderit.
               </h6>
-              <p className="text-primary text-base font-Jos w-77 leading-6">
+              <p className="text-primary text-base font-Jos md:w-77 leading-6">
                 Dolor repellendus temporibus autem rerum quibusdam officiis
                 debitis nece.
               </p>
@@ -51,10 +51,10 @@ const Blog = () => {
                 <p className="text-primary text-sm font-Jos">Mar 8, 2022</p>
               </Flex>
 
-              <h6 className="text-primary text-2xl font-medium font-Vol w-70 leading-7.5 py-3">
+              <h6 className="text-primary text-2xl font-medium font-Vol md:w-70 leading-7.5 py-3">
                 Reprehenderit in vouta velit esse cillum.
               </h6>
-              <p className="text-primary text-base font-Jos w-77 leading-6">
+              <p className="text-primary text-base font-Jos md:w-77 leading-6">
                 Dolor repellendus temporibus autem rerum quibusdam officiis
                 debitis nece.
               </p>
@@ -78,10 +78,10 @@ const Blog = () => {
                 <p className="text-primary text-sm font-Jos">Mar 8, 2022</p>
               </Flex>
 
-              <h6 className="text-primary text-2xl font-medium font-Vol w-70 leading-7.5 py-3">
+              <h6 className="text-primary text-2xl font-medium font-Vol md:w-70 leading-7.5 py-3">
                 Soluta nobis ose aligen optio cumue.
               </h6>
-              <p className="text-primary text-base font-Jos w-77 leading-6">
+              <p className="text-primary text-base font-Jos md:w-77 leading-6">
                 Dolor repellendus temporibus autem rerum quibusdam officiis
                 debitis nece.
               </p>
