@@ -5,7 +5,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="md:py-30 py-15">
+    <section className="md:py-30 py-15" id="contact">
       <Container>
         <Flex className={"gap-7.5 justify-center flex-col-reverse md:flex-row"}>
           <div className="w-full md:w-117.5 h-146.5 bg-[#C4C4C4]"></div>
@@ -28,7 +28,9 @@ const Contact = () => {
                 className="outline-none pb-3 border-b-3 border-primary/10 placeholder:text-primary/70 placeholder:text-lg placeholder:font-Jos w-75"
               />
             </Flex>
-            <Flex className={"gap-7 md:gap-x-15 flex-col md:flex-row md:py-14 py-7"}>
+            <Flex
+              className={"gap-7 md:gap-x-15 flex-col md:flex-row md:py-14 py-7"}
+            >
               <input
                 type="text"
                 placeholder="Enter Name"

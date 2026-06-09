@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const Blog = () => {
   return (
-    <section className="md:pb-30 pb-15">
+    <section className="md:pb-30 pb-15" id="blog">
       <Container>
         <p className="text-lg font-medium text-secondary text-center font-Vol">
           Letest Blogs

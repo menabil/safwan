@@ -6,6 +6,7 @@ import Flex from "@/components/Flex";
 import Button from "@/components/Button";
 import Logo from "../public/logo.png";
 import { HiMenuAlt1 } from "react-icons/hi";
+import Link from "next/link";
 
 const Header = () => {
   let [show, setShow] = useState(false);
@@ -28,16 +29,16 @@ const Header = () => {
               Home
             </li>
             <li className="hover:text-secondary duration-300 cursor-pointer">
-              Pages
+              <Link href="#portfolio">Pages</Link>
             </li>
             <li className="hover:text-secondary duration-300 cursor-pointer">
-              Services
+              <Link href="#service">Services</Link>
             </li>
             <li className="hover:text-secondary duration-300 cursor-pointer">
-              Blog
+              <Link href="#blog">Blog</Link>
             </li>
             <li className="hover:text-secondary duration-300 cursor-pointer">
-              Contact
+              <Link href="#contact">Contact</Link>
             </li>
           </ul>
 
@@ -51,19 +52,19 @@ const Header = () => {
             <div className="absolute top-full left-[5%] border-secondary border-4 w-[85%] bg-white p-5 rounded-2xl shadow-newMade md:hidden z-50">
               <ul className="flex items-center text-primary text-lg flex-col gap-y-4">
                 <li className="hover:text-secondary duration-300 cursor-pointer">
-                  Home
+                  <Link href="/">Home</Link>
                 </li>
                 <li className="hover:text-secondary duration-300 cursor-pointer">
-                  Pages
+                  <Link href="#portfolio">Pages</Link>
                 </li>
                 <li className="hover:text-secondary duration-300 cursor-pointer">
-                  Services
+                  <Link href="#service">Services</Link>
                 </li>
                 <li className="hover:text-secondary duration-300 cursor-pointer">
-                  Blog
+                  <Link href="#blog">Blog</Link>
                 </li>
                 <li className="hover:text-secondary duration-300 cursor-pointer">
-                  Contact
+                  <Link href="#contact">Contact</Link>
                 </li>
               </ul>
               <Button

@@ -25,7 +25,7 @@ const Portfolio = () => {
     initMixItUp();
   }, []);
   return (
-    <section className="md:py-30 py-15">
+    <section className="md:py-30 py-15" id="portfolio">
       <Container>
         <p className="text-lg font-medium text-secondary text-center font-Vol">
           My Portfolio
