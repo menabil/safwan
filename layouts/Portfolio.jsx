@@ -5,12 +5,9 @@ import { useEffect, useRef } from "react";
 
 const Portfolio = () => {
   const containerRef = useRef(null);
-
   useEffect(() => {
-    // Dynamically import mixitup only on the client-side
     const initMixItUp = async () => {
       const { default: mixitup } = await import("mixitup");
-
       if (containerRef.current) {
         mixitup(containerRef.current, {
           animation: {
@@ -24,6 +21,7 @@ const Portfolio = () => {
     };
     initMixItUp();
   }, []);
+
   return (
     <section className="md:py-30 py-15" id="portfolio">
       <Container>
